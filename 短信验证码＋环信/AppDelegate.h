@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  短信验证码＋环信
+//  innosticMedical
 //
-//  Created by angelwin on 16/4/28.
+//  Created by angelwin on 16/4/8.
 //  Copyright © 2016年 com@angelwin. All rights reserved.
 //
 

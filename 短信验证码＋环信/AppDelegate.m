@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <SMS_SDK/SMSSDK.h>
 
 @interface AppDelegate ()
 
@@ -16,13 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    //初始化应用，appKey和appSecret从后台申请得
+    [SMSSDK registerApp:@"123d49510f044"
+             withSecret:@"66c7343cd386059fe30bfcde720aab67"];
+    
+    
+    
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
